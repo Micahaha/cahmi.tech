@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@600&family=Lato:wght@700&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 0;
+    font-family: 'Akshar', sans-serif;
+}
+
+.flex-container-home {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: rgb(143, 32, 32);
+}
+
+.cards {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    display: flex;
+    background-color: rgb(76, 17, 17);
+    color: white;
+    text-align: center;
+}
+
+.cards .card {
+    flex-grow: 1;
+    flex: 1 1 0px;
+    padding-top: 25px;
+    font-size: 120%;
+    gap: 50%;
+    height: 500px;
+}
+
+.flex-container-home h1 {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    color: white;
+    font-size: 250px;
+}
+
+.flex-container-home h2 {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    text-align: center;
+    color: white;
+}
+
+.flex-container-home h3 {
+    color: white;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    text-align: center;
+}
+
+.flex-container .buttons {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    padding-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(174, 39, 39);
+    font-family: 'Akshar', sans-serif;
+}
+
+footer {
+    background-color: rgb(116, 2, 2);
+    height: 40px;
+    text-align: center;
+    padding: 15px 15px;
+    font-family: 'Akshar', sans-serif;
+    color: white;
+}
+
+.logo {
+    color: rgba(255, 255, 255, 0.801);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.801);
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 00px 20px 0px 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger div {
+    display: none;
+    width: 25px;
+    height: 5px;
+    border-radius: 10%;
+    background-color: white;
+    margin: 5px;
+}
+
+.burger {
+    cursor: pointer
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(174, 39, 39);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger div {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navlinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
