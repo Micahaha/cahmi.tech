@@ -25,8 +25,68 @@ body {
     background-color: rgb(143, 32, 32);
 }
 
+.flex-container-contact {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 95vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(143, 32, 32);
+}
+
+.flex-container-projects {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 95vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(143, 32, 32);
+    gap: 2%;
+    padding: 1%;
+}
+
+.flex-container-projects .project {
+    height: 30%;
+    flex-basis: 25%;
+    background-color: rgb(165, 39, 39);
+    text-align: center;
+    color: white;
+}
+
+.flex-container-contact h1 {
+    font-size: 5vh;
+    padding-top: 25px;
+    color: white;
+}
+
+.flex-contact {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px;
+}
+
+.flex-contact .box {
+    flex-direction: column;
+    flex-basis: 25%;
+    border-radius: 2%;
+    padding: 25px;
+    background-color: rgb(122, 31, 31);
+    color: white;
+}
+
 .cards {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     display: flex;
     background-color: rgb(76, 17, 17);
@@ -67,7 +127,7 @@ body {
     text-align: center;
 }
 
-.flex-container .buttons {
+.flex-container-home .buttons {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
@@ -166,6 +226,9 @@ footer {
     }
     .burger div {
         display: block;
+    }
+    .flex-contact {
+        flex-direction: column
     }
 }
 
