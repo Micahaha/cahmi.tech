@@ -81,6 +81,7 @@ body {
     flex-basis: 25%;
     border-radius: 2%;
     padding: 25px;
+    height: 50%;
     background-color: rgb(122, 31, 31);
     color: white;
 }
@@ -95,12 +96,10 @@ body {
 }
 
 .cards .card {
-    flex-grow: 1;
-    flex: 1 1 0px;
-    padding-top: 25px;
-    font-size: 120%;
-    gap: 50%;
-    height: 500px;
+    flex: 1 1 20px;
+    font-size: 1.5vh;
+    height: 350px;
+    padding: 20px;
 }
 
 .flex-container-home h1 {
@@ -127,11 +126,12 @@ body {
     text-align: center;
 }
 
-.flex-container-home .buttons {
+.flex-container-home .buttons a {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
     padding-top: 20px;
+    color: white;
 }
 
 nav {
