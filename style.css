@@ -50,7 +50,7 @@ body {
     padding: 1%;
 }
 
-.flex-container-projects .project {
+.flex-container-projects .project-item {
     height: 30%;
     flex-basis: 25%;
     background-color: rgb(165, 39, 39);
