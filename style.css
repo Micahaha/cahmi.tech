@@ -134,6 +134,12 @@ body {
     color: white;
 }
 
+.flex-container-home h4 {
+    font-size: 95px;
+    color: white;
+    margin-top: auto;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -197,6 +203,11 @@ footer {
 @media screen and (max-width: 1024px) {
     .nav-links {
         width: 60%;
+    }
+    .flex-container-home h4 {
+        font-size: 45px;
+        color: white;
+        margin-top: auto;
     }
 }
 
